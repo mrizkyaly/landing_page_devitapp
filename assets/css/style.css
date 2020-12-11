@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    --primary-color: #0ca55e;
+    --secondary-color: #fd603a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+/* Header */
+
+.navbar {
+    font-size: 17px;
+    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: all ease 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 700;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar .navbar-toggler:focus {
+    border: none;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar .navbar-toggler i {
+    font-size: 30px;
+    color: var(--secondary-color) !important;
+}
+
+/* Banner */
+
+.banner h5 {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.banner h1 {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.banner p {
+    color: #b0b0b0;
+}
+
+.btn {
+    margin-top: 20px;
+    border-radius: 0%;
+    width: 30%;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-login {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+.btn-login:hover {
+    border-color: var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn-register {
+    border-color: var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.btn-register:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* responsive */
+@media (max-width: 991.98px) {
+
+    /* Header */
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .navbar .navbar-nav .nav-link.active {
+        border-bottom: none;
+        color: var(--secondary-color);
+    }
+
+    /* Banner */
+
+    .banner .banner-kata {
+        text-align: center;
+    }
+}
