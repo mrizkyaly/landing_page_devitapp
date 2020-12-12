@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #0ca55e;
-    --secondary-color: #222831;
+    --secondary-color: #4a4a4a;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
 
 .navbar {
     font-size: 17px;
-    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); */
-    border-bottom: 1px solid #eee;
+    box-shadow: 4px 4px 12px rgba(12, 165, 94, 0.1);
+    /* border-bottom: 1px solid #eee; */
 }
 
 .navbar .navbar-brand {
@@ -26,13 +26,13 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-right: 10px;
     transition: all ease 0.3s;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .navbar .navbar-nav .nav-link.active {
@@ -63,6 +63,7 @@ body {
 .banner h5 {
     color: var(--secondary-color);
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .banner h1 {
@@ -78,7 +79,12 @@ body {
     margin-top: 20px;
     border-radius: 0%;
     width: 30%;
-    transition: all ease-in-out 0.3s;
+    font-weight: 700;
+    transition: all ease-in-out 0.2s;
+}
+
+.btn:hover {
+    margin-top: -1px;
 }
 
 .btn-login {
@@ -121,11 +127,10 @@ body {
 
     .navbar .navbar-nav .nav-link.active {
         border-bottom: none;
-        color: var(--primary-color);
+        color: var(--secondary-color);
     }
 
     /* Banner */
-
     .banner .banner-kata {
         text-align: center;
     }
